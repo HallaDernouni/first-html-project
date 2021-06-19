@@ -1,0 +1,59 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My First Form</title>
+</head>
+
+<body>
+	<H1>Your opinion interests us</H1>
+	<TABLE>
+		<td>
+	<fieldset>
+		<legend>Personal Informations</legend>
+		<ol>
+		    <li><label for="Name">Name </label><input type="Name" name="Name" id="Name"></li>
+        <li><label for="Date of Birth">Date of Birth </label><input type="datetime-local"
+          id="Date of Birth" name="Date of Birth" value="1900-01-01" min="1900-01-01" max="2021-12-31"></li>
+        <li><label for="WebSite">WebSite </label><input required type="url" name="WebSite" required value="Https://"></li>
+        <li><label for="Employment">Employment <select id="select">
+        	<option></option>
+        	<option>Student</option>
+        	<option>Network Administrator</option>
+        	<option>Web Develloper</option>
+        	<option>Web Designer</option>
+        	<option>DevOps</option>
+        </select>
+        </li>
+
+        <li><label for="Salary">Approx. Annual Salary </label><input type="number" name="Salary" step="1000" min="1000"></li>
+		</ol>
+	</fieldset>
+    </td>
+    <td>
+    	<fieldset>
+    	<legend>Contact Informations</legend>
+    	<ol>
+    	<li><label for="Address">Address </label><input type="Address" name="Address"><input type="Address" name="Address"></li>
+    	<li><label for="Country">Country </label><select id="select">
+    		<option></option>
+    		<option>Algeria</option>
+    		<option>Tunisia</option>
+    		<option>Maroco</option>
+    	</select></li>
+    	<li><label for="Tel">Tel </label><input type="Tel" name="Tel" placeholder="+213XXXXXXXXX"></li>
+    	<li><label for="Email">Email <input type="email" name="" placeholder="example@gmail.com"></li>
+       </ol>
+    </fieldset>
+</td>
+    </TABLE>
+
+    <div>
+    	<H1>Preferences</H1>
+    	<label>Choose a color <input type="color" name="color"></label><br>
+    	<label for="Scale">On a scale of 1 to 10, what is your level of enthusiasm for HTML5?</label>
+      <input required type="range" name="range" min="0" max="10" step="1" value="0"><br>
+    	<input type="button" name="submite" value="submite">
+</body>
+</html>
